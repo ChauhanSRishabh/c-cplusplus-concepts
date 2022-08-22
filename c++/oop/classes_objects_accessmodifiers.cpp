@@ -1,5 +1,7 @@
 #include <iostream>
 using std ::string;
+using std ::cout;
+using std ::endl;
 
 class Employee
 {
@@ -13,6 +15,12 @@ class Employee
         int Age;
 
     // Behaviors
+        void introduceyourself()
+        {
+            cout << "Name : " << Name << endl;
+            cout << "Company : " << Company << endl;
+            cout << "Age : " << Age << endl;
+        }
 };
 
 int main()
@@ -25,5 +33,7 @@ int main()
     emp1.Name = "Rishabh";
     emp1.Company = "Google";
     emp1.Age = 27;
+
+    emp1.introduceyourself();
     return 0;
 }
